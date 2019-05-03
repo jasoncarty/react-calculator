@@ -1,0 +1,11 @@
+.radioButton {
+  display: flex;
+  flex-direction: row;
+  justify-content: left;
+  align-items: center;
+  height: 25px;
+}
+
+.text {
+  margin-left: 15px;
+}

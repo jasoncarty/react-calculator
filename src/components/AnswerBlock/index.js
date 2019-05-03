@@ -1,6 +1,8 @@
 import React, { Component } from "react";
 import PropTypes from "prop-types";
-import { connect } from 'react-redux'
+import { connect } from "react-redux";
+import cs from "classnames";
+
 import styles from "./AnswerBlock.module.css";
 import RadioButton from "../RadioButton";
 import { changeCalculationType } from './actions';
@@ -10,7 +12,8 @@ export class AnswerBlock extends Component {
   static propTypes = {
     fieldValues: PropTypes.PropTypes.shape().isRequired,
     updateCalculationType: PropTypes.func.isRequired,
-    calculationType: PropTypes.string.isRequired
+    calculationType: PropTypes.string.isRequired,
+    className: PropTypes.string
   }
 
   state = {
@@ -28,13 +31,14 @@ export class AnswerBlock extends Component {
   }
 
   render() {
-    const { calculationType } = this.props;
+    const { calculationType, className } = this.props;
+
     return (
-      <div className={styles.answerBlock}>
+      <div className={cs(styles.answerBlock, className, styles.noMargin)}>
         <div className={styles.content}>
           <div className={styles.radioList}>
             <RadioButton
-              text="Add"
+              text="Sum"
               value="SUM"
               onChange={this.handleRadioChange}
               checked={calculationType === '+'}
@@ -47,7 +51,7 @@ export class AnswerBlock extends Component {
             />
           </div>
           <div className={styles.answer}>
-            Answer: {this.state.answer}
+            Result: {this.state.answer}
           </div>
         </div>
       </div>

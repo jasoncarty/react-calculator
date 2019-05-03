@@ -1,8 +1,10 @@
-import React, { Fragment } from "react";
+import React from "react";
 import PropTypes from "prop-types";
 
+import styles from "./RadioButton.module.css";
+
 const RadioButton = ({ text, onChange, value, ...rest }) => (
-  <Fragment>
+  <div className={styles.radioButton}>
     <input
       type="radio"
       name="calculationType"
@@ -10,8 +12,8 @@ const RadioButton = ({ text, onChange, value, ...rest }) => (
       onChange={onChange}
       {...rest}
     />
-    {text}
-  </Fragment>
+    <div className={styles.text}>{text}</div>
+  </div>
 );
 
 RadioButton.propTypes = {

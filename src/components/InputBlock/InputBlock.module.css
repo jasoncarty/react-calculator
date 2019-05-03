@@ -5,3 +5,32 @@
   background: rgb(121, 208, 254);
   border-radius: 3px;
 }
+
+.content {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.text {
+  width: 55%;
+}
+
+.input {
+  width: 45%;
+  padding: 10px 14px;
+  border: 1px solid #000;
+  border-radius: 2px;
+}
+
+@media (max-width: 700px) {
+  .inputBlock {
+    float: left;
+  }
+}
+
+@media (max-width: 479px) {
+  .inputBlock {
+    float: none;
+  }
+}

@@ -5,3 +5,27 @@
   background: rgb(255, 193, 203);
   border-radius: 3px;
 }
+
+.content, .radioList {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.answer {
+  overflow-wrap: break-word;
+  max-width: 138px;
+}
+
+@media (max-width: 700px) {
+  .answerBlock {
+    float: left
+  }
+}
+
+@media (max-width: 479px) {
+  .answerBlock.noMargin {
+    float: none;
+    margin-top: 0;
+  }
+}

@@ -1,6 +1,8 @@
 import React, { Component } from "react";
 import PropTypes from "prop-types";
 import { connect } from 'react-redux'
+import cs from "classnames";
+
 import { changeFieldValue } from "./actions";
 import { validator } from "../utils";
 import styles from "./InputBlock.module.css";
@@ -8,7 +10,8 @@ import styles from "./InputBlock.module.css";
 export class InputBlock extends Component {
   static propTypes = {
     index: PropTypes.number.isRequired,
-    changeValue: PropTypes.func.isRequired
+    changeValue: PropTypes.func.isRequired,
+    className: PropTypes.string
   }
 
   state = {
@@ -28,9 +31,10 @@ export class InputBlock extends Component {
 
   render() {
     const { value } = this.state;
+    const { className } = this.props;
 
     return (
-      <div className={styles.inputBlock}>
+      <div className={cs(styles.inputBlock, className)}>
         <div className={styles.content}>
           <div className={styles.text}>
             {`Value ${this.props.index + 1}: `}

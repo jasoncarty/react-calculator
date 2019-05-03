@@ -1,6 +1,8 @@
 import React from "react";
 import ReactDOM from "react-dom";
 import { Provider } from "react-redux";
+import ReactTestRenderer from 'react-test-renderer';
+
 import App from "../App";
 
 const mockStore = {
@@ -22,5 +24,14 @@ describe("<App />", () => {
       div
     );
     ReactDOM.unmountComponentAtNode(div);
+  });
+
+  it("matches snapshot", () => {
+    const instance = ReactTestRenderer.create(
+      <Provider store={mockStore}>
+        <App />
+      </Provider>
+    );
+    expect(instance.toJSON()).toMatchSnapshot();
   });
 });

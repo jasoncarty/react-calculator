@@ -1,0 +1,123 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<App /> matches snapshot 1`] = `
+<div
+  className="app"
+>
+  <div
+    className="row"
+  >
+    <div
+      className="inputBlock block"
+    >
+      <div
+        className="content"
+      >
+        <div
+          className="text"
+        >
+          Value 1: 
+        </div>
+        <input
+          className="input"
+          onChange={[Function]}
+          type="text"
+          value=""
+        />
+      </div>
+    </div>
+    <div
+      className="inputBlock block"
+    >
+      <div
+        className="content"
+      >
+        <div
+          className="text"
+        >
+          Value 2: 
+        </div>
+        <input
+          className="input"
+          onChange={[Function]}
+          type="text"
+          value=""
+        />
+      </div>
+    </div>
+    <div
+      className="inputBlock block"
+    >
+      <div
+        className="content"
+      >
+        <div
+          className="text"
+        >
+          Value 3: 
+        </div>
+        <input
+          className="input"
+          onChange={[Function]}
+          type="text"
+          value=""
+        />
+      </div>
+    </div>
+  </div>
+  <div
+    className="row"
+  >
+    <div
+      className="answerBlock block noMargin"
+    >
+      <div
+        className="content"
+      >
+        <div
+          className="radioList"
+        >
+          <div
+            className="radioButton"
+          >
+            <input
+              checked={false}
+              name="calculationType"
+              onChange={[Function]}
+              type="radio"
+              value="SUM"
+            />
+            <div
+              className="text"
+            >
+              Sum
+            </div>
+          </div>
+          <div
+            className="radioButton"
+          >
+            <input
+              checked={false}
+              name="calculationType"
+              onChange={[Function]}
+              type="radio"
+              value="MULTIPLY"
+            />
+            <div
+              className="text"
+            >
+              Multiply
+            </div>
+          </div>
+        </div>
+        <div
+          className="answer"
+        >
+          Result: 
+          0
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+`;

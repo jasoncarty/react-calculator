@@ -2,7 +2,7 @@
 
 exports[`<AnswerBlock /> matches snapshot 1`] = `
 <div
-  className="answerBlock"
+  className="answerBlock noMargin"
 >
   <div
     className="content"
@@ -10,27 +10,43 @@ exports[`<AnswerBlock /> matches snapshot 1`] = `
     <div
       className="radioList"
     >
-      <input
-        checked={false}
-        name="calculationType"
-        onChange={[Function]}
-        type="radio"
-        value="SUM"
-      />
-      Add
-      <input
-        checked={false}
-        name="calculationType"
-        onChange={[Function]}
-        type="radio"
-        value="MULTIPLY"
-      />
-      Multiply
+      <div
+        className="radioButton"
+      >
+        <input
+          checked={false}
+          name="calculationType"
+          onChange={[Function]}
+          type="radio"
+          value="SUM"
+        />
+        <div
+          className="text"
+        >
+          Sum
+        </div>
+      </div>
+      <div
+        className="radioButton"
+      >
+        <input
+          checked={false}
+          name="calculationType"
+          onChange={[Function]}
+          type="radio"
+          value="MULTIPLY"
+        />
+        <div
+          className="text"
+        >
+          Multiply
+        </div>
+      </div>
     </div>
     <div
       className="answer"
     >
-      Answer: 
+      Result: 
       0
     </div>
   </div>
@@ -39,7 +55,7 @@ exports[`<AnswerBlock /> matches snapshot 1`] = `
 
 exports[`<AnswerBlock /> matches snapshot 2`] = `
 <div
-  className="answerBlock"
+  className="answerBlock noMargin"
 >
   <div
     className="content"
@@ -47,27 +63,43 @@ exports[`<AnswerBlock /> matches snapshot 2`] = `
     <div
       className="radioList"
     >
-      <input
-        checked={false}
-        name="calculationType"
-        onChange={[Function]}
-        type="radio"
-        value="SUM"
-      />
-      Add
-      <input
-        checked={true}
-        name="calculationType"
-        onChange={[Function]}
-        type="radio"
-        value="MULTIPLY"
-      />
-      Multiply
+      <div
+        className="radioButton"
+      >
+        <input
+          checked={false}
+          name="calculationType"
+          onChange={[Function]}
+          type="radio"
+          value="SUM"
+        />
+        <div
+          className="text"
+        >
+          Sum
+        </div>
+      </div>
+      <div
+        className="radioButton"
+      >
+        <input
+          checked={true}
+          name="calculationType"
+          onChange={[Function]}
+          type="radio"
+          value="MULTIPLY"
+        />
+        <div
+          className="text"
+        >
+          Multiply
+        </div>
+      </div>
     </div>
     <div
       className="answer"
     >
-      Answer: 
+      Result: 
       240
     </div>
   </div>
@@ -76,7 +108,7 @@ exports[`<AnswerBlock /> matches snapshot 2`] = `
 
 exports[`<AnswerBlock /> matches snapshot 3`] = `
 <div
-  className="answerBlock"
+  className="answerBlock noMargin"
 >
   <div
     className="content"
@@ -84,27 +116,43 @@ exports[`<AnswerBlock /> matches snapshot 3`] = `
     <div
       className="radioList"
     >
-      <input
-        checked={true}
-        name="calculationType"
-        onChange={[Function]}
-        type="radio"
-        value="SUM"
-      />
-      Add
-      <input
-        checked={false}
-        name="calculationType"
-        onChange={[Function]}
-        type="radio"
-        value="MULTIPLY"
-      />
-      Multiply
+      <div
+        className="radioButton"
+      >
+        <input
+          checked={true}
+          name="calculationType"
+          onChange={[Function]}
+          type="radio"
+          value="SUM"
+        />
+        <div
+          className="text"
+        >
+          Sum
+        </div>
+      </div>
+      <div
+        className="radioButton"
+      >
+        <input
+          checked={false}
+          name="calculationType"
+          onChange={[Function]}
+          type="radio"
+          value="MULTIPLY"
+        />
+        <div
+          className="text"
+        >
+          Multiply
+        </div>
+      </div>
     </div>
     <div
       className="answer"
     >
-      Answer: 
+      Result: 
       28
     </div>
   </div>

@@ -1,16 +1,22 @@
 import React from "react";
+import cs from "classnames";
+
 import InputBlock from "./components/InputBlock";
 import AnswerBlock from "./components/AnswerBlock";
 
-import "./App.css";
+import styles from "./App.module.css";
 
 function App() {
   return (
-    <div className="App">
-      <InputBlock index={0}></InputBlock>
-      <InputBlock index={1}></InputBlock>
-      <InputBlock index={2}></InputBlock>
-      <AnswerBlock/>
+    <div className={styles.app}>
+      <div className={cs(styles.row)}>
+        <InputBlock index={0} className={styles.block}></InputBlock>
+        <InputBlock index={1} className={styles.block}></InputBlock>
+        <InputBlock index={2} className={styles.block}></InputBlock>
+      </div>
+      <div className={cs(styles.row)}>
+        <AnswerBlock className={styles.block}/>
+      </div>
     </div>
   );
 }
