@@ -1,0 +1,112 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<AnswerBlock /> matches snapshot 1`] = `
+<div
+  className="answerBlock"
+>
+  <div
+    className="content"
+  >
+    <div
+      className="radioList"
+    >
+      <input
+        checked={false}
+        name="calculationType"
+        onChange={[Function]}
+        type="radio"
+        value="SUM"
+      />
+      Add
+      <input
+        checked={false}
+        name="calculationType"
+        onChange={[Function]}
+        type="radio"
+        value="MULTIPLY"
+      />
+      Multiply
+    </div>
+    <div
+      className="answer"
+    >
+      Answer: 
+      0
+    </div>
+  </div>
+</div>
+`;
+
+exports[`<AnswerBlock /> matches snapshot 2`] = `
+<div
+  className="answerBlock"
+>
+  <div
+    className="content"
+  >
+    <div
+      className="radioList"
+    >
+      <input
+        checked={false}
+        name="calculationType"
+        onChange={[Function]}
+        type="radio"
+        value="SUM"
+      />
+      Add
+      <input
+        checked={true}
+        name="calculationType"
+        onChange={[Function]}
+        type="radio"
+        value="MULTIPLY"
+      />
+      Multiply
+    </div>
+    <div
+      className="answer"
+    >
+      Answer: 
+      240
+    </div>
+  </div>
+</div>
+`;
+
+exports[`<AnswerBlock /> matches snapshot 3`] = `
+<div
+  className="answerBlock"
+>
+  <div
+    className="content"
+  >
+    <div
+      className="radioList"
+    >
+      <input
+        checked={true}
+        name="calculationType"
+        onChange={[Function]}
+        type="radio"
+        value="SUM"
+      />
+      Add
+      <input
+        checked={false}
+        name="calculationType"
+        onChange={[Function]}
+        type="radio"
+        value="MULTIPLY"
+      />
+      Multiply
+    </div>
+    <div
+      className="answer"
+    >
+      Answer: 
+      28
+    </div>
+  </div>
+</div>
+`;

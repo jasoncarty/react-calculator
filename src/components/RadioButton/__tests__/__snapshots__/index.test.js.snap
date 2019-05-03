@@ -1,0 +1,14 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<RadioButton /> matches snapshot 1`] = `
+Array [
+  <input
+    name="calculationType"
+    onChange={[Function]}
+    someOtherProp={[Function]}
+    type="radio"
+    value="mockValue"
+  />,
+  "lkajsdflkjasfd",
+]
+`;

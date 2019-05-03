@@ -1,24 +1,16 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import React from "react";
+import InputBlock from "./components/InputBlock";
+import AnswerBlock from "./components/AnswerBlock";
+
+import "./App.css";
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <InputBlock index={0}></InputBlock>
+      <InputBlock index={1}></InputBlock>
+      <InputBlock index={2}></InputBlock>
+      <AnswerBlock/>
     </div>
   );
 }

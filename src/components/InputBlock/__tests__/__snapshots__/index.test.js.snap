@@ -1,0 +1,67 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<InputBlock /> Calls changeValue 1`] = `
+<div
+  className="inputBlock"
+>
+  <div
+    className="content"
+  >
+    <div
+      className="text"
+    >
+      Value 2: 
+    </div>
+    <input
+      className="input"
+      onChange={[Function]}
+      type="text"
+      value="890"
+    />
+  </div>
+</div>
+`;
+
+exports[`<InputBlock /> matches snapshot 1`] = `
+<div
+  className="inputBlock"
+>
+  <div
+    className="content"
+  >
+    <div
+      className="text"
+    >
+      Value 1: 
+    </div>
+    <input
+      className="input"
+      onChange={[Function]}
+      type="text"
+      value=""
+    />
+  </div>
+</div>
+`;
+
+exports[`<InputBlock /> updates state 1`] = `
+<div
+  className="inputBlock"
+>
+  <div
+    className="content"
+  >
+    <div
+      className="text"
+    >
+      Value 2: 
+    </div>
+    <input
+      className="input"
+      onChange={[Function]}
+      type="text"
+      value="80"
+    />
+  </div>
+</div>
+`;
