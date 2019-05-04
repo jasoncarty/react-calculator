@@ -9,6 +9,9 @@ export const calculate = ({ fieldValues, calculationType }) => {
       initialValue = 1;
     }
     const answer = Object.keys(fieldValues).reduce((acc, key) => {
+      if (fieldValues[key] === "") {
+        return Number(acc);
+      }
       if (calculationType === "*") {
         return acc * Number(fieldValues[key]);
       }

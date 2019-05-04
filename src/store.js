@@ -17,6 +17,11 @@ export const fieldValues = (state = {}, action) => {
   switch (action.type) {
     case CHANGE: {
       const { index, payload } = action;
+      // eslint-disable-next-line no-unused-vars
+      const { [index]: value, ...rest } = state;
+      if (payload === "") {
+        return rest;
+      }
       return {
         ...state,
         [index]: Number(payload),

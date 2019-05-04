@@ -4,6 +4,8 @@ import { Provider } from "react-redux";
 
 import { store } from "./store";
 import "./index.css";
+import "react-app-polyfill/ie11";
+import "react-app-polyfill/stable";
 import App from "./App";
 import * as serviceWorker from "./serviceWorker";
 

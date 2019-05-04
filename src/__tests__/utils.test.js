@@ -20,6 +20,15 @@ const multiplicationValues = [
   {
     result: { answer: 0 },
     values: { 2: "93" }
+  },
+  {
+    result: { answer: 6231 },
+    values: { 0: "67", 2: "93" }
+  },
+  ,
+  {
+    result: { answer: 6231 },
+    values: { 0: "67", 1: "", 2: "93" }
   }
 ];
 

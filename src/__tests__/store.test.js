@@ -45,7 +45,6 @@ describe("store", () => {
           payload: ""
         }))
           .toEqual({
-            0: 0,
             1: 345
           });
       });
