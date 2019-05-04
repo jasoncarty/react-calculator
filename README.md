@@ -6,6 +6,8 @@ For this project I chose to use React. I chose this because it is something that
 
 Another technology used in this project is redux. I chose to use this so that I could have a global state in the application, which simplifies the sharing of state between components.
 
+The project can be seen live at [react calculator](https://jasoncarty.github.io/react-calculator/)
+
 ## Available Scripts
 
 In the project directory, you can run:
