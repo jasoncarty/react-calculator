@@ -1,3 +1,13 @@
+const convertIntoOperator = {
+  "+": (x, y) => x + y,
+  "*": (x, y) => x * y,
+};
+
+/**
+ * @param  {} {fieldValues
+ * @param  {} calculationType}
+ * @returns {Object}
+ */
 export const calculate = ({ fieldValues, calculationType }) => {
   /*
     Deal with the values input into the fields depending on
@@ -5,23 +15,28 @@ export const calculate = ({ fieldValues, calculationType }) => {
   */
   if (Object.entries(fieldValues).length > 1 && calculationType) {
     let initialValue = 0;
+
     if (calculationType === "*") {
       initialValue = 1;
     }
-    const answer = Object.keys(fieldValues).reduce((acc, key) => {
-      if (fieldValues[key] === "") {
-        return Number(acc);
-      }
-      if (calculationType === "*") {
-        return acc * Number(fieldValues[key]);
-      }
-      return acc + Number(fieldValues[key]);
-    }, initialValue);
-    return { answer };
+
+    return {
+      answer: Object.keys(fieldValues).reduce((acc, key) => {
+        if (fieldValues[key] === "") {
+          return Number(acc);
+        }
+        return convertIntoOperator[calculationType](acc, Number(fieldValues[key]));
+      }, initialValue)
+    };
   }
+
   return { answer: 0 };
 };
 
+/**
+ * @param  {} val
+ * @returns {String}
+ */
 export const validator = (val) => {
   // Replace everything that is not a number
   let value = val.replace(/\D+/g, "");

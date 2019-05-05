@@ -18,6 +18,10 @@ export class InputBlock extends Component {
     value: ""
   }
 
+
+  /**
+   * @param  {} e
+   */
   handleChange = (e) => {
     if (typeof e.target.value === "string") {
       const value = validator(e.target.value);

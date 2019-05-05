@@ -6,7 +6,7 @@ import AnswerBlock from "./components/AnswerBlock";
 
 import styles from "./App.module.css";
 
-function App() {
+const App = () => {
   return (
     <div className={styles.app}>
       <div className={cs(styles.row)}>
@@ -19,6 +19,6 @@ function App() {
       </div>
     </div>
   );
-}
+};
 
 export default App;

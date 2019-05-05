@@ -2,6 +2,11 @@ import { createStore } from "redux";
 import { combineReducers } from "redux";
 import { SUM, MULTIPLY, CHANGE } from "./constants";
 
+/**
+ * @param  {} state="+"
+ * @param  {} action
+ * @returns {String}
+ */
 export const calculationType = (state = "+", action) => {
   switch (action.type) {
     case SUM:
@@ -13,6 +18,11 @@ export const calculationType = (state = "+", action) => {
   }
 };
 
+/**
+ * @param  {} state={}
+ * @param  {} action
+ * @returns {Object}
+ */
 export const fieldValues = (state = {}, action) => {
   switch (action.type) {
     case CHANGE: {

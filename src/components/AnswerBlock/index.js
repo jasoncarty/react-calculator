@@ -20,10 +20,17 @@ export class AnswerBlock extends Component {
     answer: 0
   }
 
+  /**
+   * @param  {} nextProps
+   * @returns  {Object}
+   */
   static getDerivedStateFromProps(nextProps) {
     return calculate(nextProps);
   }
 
+  /**
+   * @param  {} e
+   */
   handleRadioChange = (e) => {
     if (e.target.value) {
       this.props.updateCalculationType(e.target.value);
@@ -58,12 +65,19 @@ export class AnswerBlock extends Component {
     );
   }
 }
-
+/**
+ * @param  {} state
+ * @returns {Object}
+ */
 const mapStateToProps = (state) => ({
   fieldValues: state.fieldValues,
   calculationType: state.calculationType
 })
 
+/**
+ * @param  {} dispatch
+ * @returns {Object}
+ */
 const mapDispatchToProps = (dispatch) => ({
   updateCalculationType: (payload) => dispatch(changeCalculationType(payload))
 })

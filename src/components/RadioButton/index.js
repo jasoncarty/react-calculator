@@ -3,6 +3,13 @@ import PropTypes from "prop-types";
 
 import styles from "./RadioButton.module.css";
 
+/**
+ * @param  {} {text
+ * @param  {} onChange
+ * @param  {} value
+ * @param  {} ...rest}
+ * @returns {Object}
+ */
 const RadioButton = ({ text, onChange, value, ...rest }) => (
   <div className={styles.radioButton}>
     <input

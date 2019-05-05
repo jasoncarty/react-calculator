@@ -1,9 +1,12 @@
 import { CHANGE } from "../../constants";
 
-export const changeFieldValue = ({index, payload}) => {
-  return {
-    type: CHANGE,
-    index,
-    payload
-  };
-};
+/**
+ * @param  {} {index
+ * @param  {} payload}
+ * @returns {Object}
+ */
+export const changeFieldValue = ({index, payload}) => ({
+  type: CHANGE,
+  index,
+  payload
+});
